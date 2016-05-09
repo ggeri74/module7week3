@@ -11,7 +11,7 @@ public class StartTrello {
     private void start() {
         WebDriver driver = DriverFactory.getDriver();
 
-        //use the below line instead of the above one, if want to run on remote
+        // use the below line instead of the above one, if you want to run on remote
 //        WebDriver driver = DriverFactory.getRemoteWebDriver();
 
         try {
