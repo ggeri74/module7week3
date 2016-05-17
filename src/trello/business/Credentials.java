@@ -1,4 +1,4 @@
-package trello.model;
+package trello.business;
 import java.util.Scanner;
 
 public class Credentials {

@@ -1,18 +1,21 @@
 package trello;
 
 import org.openqa.selenium.WebDriver;
-import trello.model.ScreenShotMaker;
+import trello.business.DriverFactory;
+import trello.business.ScreenShotMaker;
 import trello.pageobjects.*;
 
+
 import java.util.concurrent.TimeUnit;
+
+import static trello.business.DriverFactory.WebDriverType.*;
 
 public class StartTrello {
 
     private void start() {
-        WebDriver driver = DriverFactory.getDriver();
 
-        // use the below line instead of the above one, if you want to run on remote
-//        WebDriver driver = DriverFactory.getRemoteWebDriver();
+        // Use FIREFOXDRIVER or REMOTEWEBDRIVER enum as parameter to choose between drivers
+        WebDriver driver = DriverFactory.getDriver(FIREFOXDRIVER);
 
         try {
             trelloTest(driver);

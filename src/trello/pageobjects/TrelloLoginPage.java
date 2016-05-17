@@ -2,7 +2,7 @@ package trello.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import trello.model.Credentials;
+import trello.business.Credentials;
 
 public class TrelloLoginPage extends Page {
 
