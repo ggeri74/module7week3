@@ -7,7 +7,6 @@
     <groupId>m8w1</groupId>
     <artifactId>trello</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
